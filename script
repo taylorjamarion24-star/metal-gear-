@@ -1,0 +1,10 @@
+// Play small sound effect
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('playSound');
+  const audio = document.getElementById('codec');
+
+  btn.addEventListener('click', () => {
+    audio.currentTime = 0;
+    audio.play();
+  });
+});
